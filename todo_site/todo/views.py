@@ -3,7 +3,7 @@ from django.contrib import messages
 
 
 from .forms import TodoForm
-from todo_site.todo.models import Todo
+from .models import Todo
 
 
 def index(request):
