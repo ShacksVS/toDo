@@ -1,13 +1,13 @@
-from django.urls import path
+from django.urls import path,include
 
 from .views import (
     index,
-    remove
+    remove,
+    user_login,
 )
 
 urlpatterns = [
-    #home page
-    path('', index, name="todo"),
-    #delete
-    path('del/<str:item_id>', remove, name='del')
+    path('main', index, name="todo"),
+    path('del/<str:item_id>', remove, name='del'),
+    path('', user_login, name='login'),
 ]
