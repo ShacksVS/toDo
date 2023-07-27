@@ -9,5 +9,5 @@ from .views import (
 urlpatterns = [
     path('main', index, name="todo"),
     path('del/<str:item_id>', remove, name='del'),
-    path('', user_login, name='login'),
+    path('login', user_login, name='login'),
 ]
